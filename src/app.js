@@ -20,13 +20,24 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/home/home',
+      'pages/apply/apply'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarBackgroundColor: '#1E90FF',
+      navigationBarTitleText: '千锋学员',
+      navigationBarTextStyle: 'white'
+    },
+    tabBar: {
+      list: [
+        { text: '打卡', pagePath: 'pages/index/index' },
+        { text: '申请', pagePath: 'pages/apply/apply' },
+        { text: '我的', pagePath: 'pages/home/home' }
+      ],
+      selectedColor: '#00BFFF',
+      color: '#ccc',
     }
   }
 

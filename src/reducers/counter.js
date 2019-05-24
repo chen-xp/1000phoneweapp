@@ -1,21 +1,16 @@
-import { ADD, MINUS } from '../constants/counter'
+import { SET_DATE } from '../constants/counter'
 
 const INITIAL_STATE = {
-  num: 0
+  date: ''
 }
 
 export default function counter (state = INITIAL_STATE, action) {
   switch (action.type) {
-    case ADD:
+    case SET_DATE:
       return {
         ...state,
-        num: state.num + 1
+        date: action.value
       }
-     case MINUS:
-       return {
-         ...state,
-         num: state.num - 1
-       }
      default:
        return state
   }

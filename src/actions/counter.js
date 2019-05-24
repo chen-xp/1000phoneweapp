@@ -1,24 +1,15 @@
 import {
-  ADD,
-  MINUS
+  SET_DATE
 } from '../constants/counter'
 
-export const add = () => {
+export const setdate = () => {
   return {
-    type: ADD
+    type: SET_DATE,
+    value: new Date().toLocaleTimeString()
   }
 }
 export const minus = () => {
   return {
     type: MINUS
-  }
-}
-
-// 异步的action
-export function asyncAdd () {
-  return dispatch => {
-    setTimeout(() => {
-      dispatch(add())
-    }, 2000)
   }
 }

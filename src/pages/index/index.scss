@@ -1,0 +1,80 @@
+.map{
+  width:100%;
+}
+.user{
+  height:120px;
+  width:100%;
+  display:flex;
+  border-bottom:1px solid #ccc;
+  .left{
+    height:100%;
+    width:140px;
+    position: relative;
+    .span{
+      width: 80px;
+      height:80px;
+      position: absolute;
+      top:18px;
+      left:30px;
+      color:#fff;
+      border-radius:40px;
+      background: #00BFFF;
+      font-size:38px;
+      text-align: center;
+      line-height:70px;
+    }
+  }
+  .right{
+    width:100px;
+    height:120px;
+    text-align: center;
+    line-height: 120px;
+    color: #87CEFA;
+    font-size:30px;
+  }
+  .content{
+    flex:1;
+    font-size:28px;
+    color:#696969;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}
+.main{
+  height: 100%;
+  font-size: 28px;
+  color:#696969;
+  padding:26px;
+  position: relative;
+  .main_text{
+    margin-bottom:26px;
+    display: block;
+  }
+  .main_span{
+    height:70px;
+    width:260px;
+    display: flex;
+    justify-content: space-between;
+    .main_boot{
+      height:30px;
+      width:30px;
+      border-radius: 30px;
+      border:1px solid #ccc;
+    }
+  }
+  .main_btn{
+    height: 220px;
+    width: 220px;
+    border-radius: 110px;
+    margin: 100px auto;
+    background:#00BFFF;
+    text-align: center;
+    .main_daka{
+     text-align: center;
+     padding-top:30px;
+     margin-bottom: 20px;
+     font-size: 36px
+    }
+  }
+}
